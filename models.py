@@ -29,6 +29,9 @@ class Menu:
     
     def filter_by_category(self, category):
         return [item for item in self.items if item.category == category]
+    
+    def get_items_sorted_by_popularity(self):
+        return sorted(self.items, key=lambda item: item.popularity_rating, reverse=True)
 
 class Order:
     def __init__(self):

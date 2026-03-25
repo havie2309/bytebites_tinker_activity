@@ -25,3 +25,9 @@ customer = Customer("Vy")
 customer.add_to_purchase_history(order)
 print("Customer:", customer.name)
 print("Purchase history count:", len(customer.purchase_history))
+
+# Test sorting by popularity
+sorted_items = menu.get_items_sorted_by_popularity()
+print("Sorted by popularity:")
+for item in sorted_items:
+    print(f"  {item.name} - {item.popularity_rating}")
